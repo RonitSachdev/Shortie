@@ -8,7 +8,7 @@ A lightweight, open-source URL shortener built with PHP and SQLite.
 ![Home Page](home.png)
 
 ### Statistics Page
-![Statistics Page](stats.png)
+![Statistics Page](stat.png)
 
 ## Features
 
