@@ -20,7 +20,7 @@ A lightweight, open-source URL shortener built with PHP and SQLite.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/shortie.git
+git clone https://github.com/RonitSachdev/Shortie.git
 ```
 
 2. Configure your web server to point to the project directory
