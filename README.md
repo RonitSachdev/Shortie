@@ -2,6 +2,14 @@
 
 A lightweight, open-source URL shortener built with PHP and SQLite.
 
+## Screenshots
+
+### Home Page
+![Home Page](home.png)
+
+### Statistics Page
+![Statistics Page](stats.png)
+
 ## Features
 
 - Fast and efficient URL shortening
