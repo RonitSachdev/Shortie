@@ -1,0 +1,63 @@
+# PHP
+vendor/
+composer.lock
+*.log
+error_log
+access_log
+
+# SQLite Database
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Composer
+composer.phar
+
+# PHP CS Fixer
+.php_cs
+.php_cs.cache
+.php-cs-fixer.cache
+
+# PHPUnit
+.phpunit.result.cache
+phpunit.xml
+
+# Cache and logs
+/cache/
+/logs/
+*.cache
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Local development files
+phpinfo.php
+test.php
+*.test.php
+*.local.php
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 
