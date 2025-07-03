@@ -34,14 +34,14 @@
         </div>
         <?php endif; ?>
 
-        <?php if (isset($_GET['short']) && isset($_GET['original'])): ?>
+        <?php if (isset($_GET['success']) && isset($_GET['short_url']) && isset($_GET['original_url'])): ?>
         <div class="result-container">
             <h3>Your shortened URL is ready!</h3>
             <div class="short-url">
-                <input type="text" value="<?php echo htmlspecialchars($_GET['short']); ?>" readonly>
+                <input type="text" value="<?php echo htmlspecialchars($_GET['short_url']); ?>" readonly>
                 <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
             </div>
-            <p class="original-url">Original URL: <?php echo htmlspecialchars($_GET['original']); ?></p>
+            <p class="original-url">Original URL: <?php echo htmlspecialchars($_GET['original_url']); ?></p>
         </div>
         <?php endif; ?>
 

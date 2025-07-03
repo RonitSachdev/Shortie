@@ -205,30 +205,51 @@ button:active {
 
 .short-url {
     display: flex;
-    gap: 12px;
-    margin-bottom: 15px;
-    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    width: 100%;
 }
 
 .short-url input {
     flex: 1;
-    padding: 12px 16px;
-    background: var(--surface);
-    border: 1px solid var(--success);
-    border-radius: 8px;
-    font-size: 16px;
-    color: var(--text);
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--input-bg);
+    color: var(--text-color);
+    font-size: 14px;
+    cursor: text;
 }
 
 .copy-btn {
-    background: var(--success);
-    border-radius: 8px;
+    padding: 8px 16px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
     font-size: 14px;
-    padding: 12px 24px;
+    font-weight: 500;
+    transition: background-color 0.2s;
 }
 
 .copy-btn:hover {
-    opacity: 0.9;
+    background: var(--accent-hover);
+}
+
+.url-info {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 1px solid var(--border-color);
+}
+
+.url-info h4 {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .original-url {
@@ -279,6 +300,26 @@ button:active {
     font-size: 0.9em;
 }
 
+.url-info {
+    margin-top: 20px;
+}
+
+.url-info h4 {
+    color: var(--text);
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.recent-urls {
+    margin-top: 40px;
+}
+
+.recent-urls h3 {
+    color: var(--text);
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
 .url-list {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -307,17 +348,20 @@ button:active {
     flex: 1;
 }
 
-.url-details strong {
+.short-code {
     color: var(--primary);
+    text-decoration: none;
     font-family: monospace;
     font-size: 1.1em;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: block;
+    margin-bottom: 4px;
 }
 
-.url-original {
-    display: block;
-    color: var(--text-muted);
-    font-size: 0.9em;
-    margin-top: 4px;
+.short-code:hover {
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 .url-stats {
@@ -401,4 +445,64 @@ button:active {
         margin-left: 0;
         margin-top: 10px;
     }
+}
+
+.search-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.search-section h3 {
+    color: var(--text);
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.code-search {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.url-details-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 30px;
+}
+
+.url-details-card h3 {
+    color: var(--text);
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.details-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-item .label {
+    color: var(--text-muted);
+    font-size: 0.9em;
+}
+
+.detail-item .value {
+    color: var(--text);
+    font-size: 1.1em;
+}
+
+.detail-item .value.clicks {
+    color: var(--success);
+    font-weight: 600;
+}
+
+.detail-item .value.url-link {
+    word-break: break-all;
 } 
